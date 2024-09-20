@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Comparador de Relatórios</title>
+  <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="configs.js"></script>
+  <script src="ArquivoPlanilha.js"></script>
+  <script src="Contrato.js"></script>
+  <script src="RelatorioContratosSACC.js"></script>
+  <script src="RelatorioContratosAtivos.js"></script>
+  <script src="scripts.js"></script>
+</head>
+<body>
+  Relatório SACC
+  <input type="file" accept=".xls, .xlsx" id="relatorio_sacc"/>
+
+  <br>
+  <br>
+  Contratos Vigentes
+  <input type="file" accept=".xls, .xlsx" id="relatorio_contratos_vigentes"/>
+
+  <br>
+  <br>
+  <button type="button" onclick="contractComparison()">Comparar</button>
+  <div id="result"></div>
+</body>
+</html>
